@@ -1,0 +1,62 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 错误容器 */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* 错误提示框 */
+.error-box {
+    background-color: white;
+    padding: 40px 60px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 错误标题 */
+.error-box h1 {
+    font-size: 50px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+/* 错误描述 */
+.error-box p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* 返回首页按钮 */
+.btn {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}

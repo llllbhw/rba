@@ -1,0 +1,53 @@
+/* 整个页面的样式：居中、去除默认边距等 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 1.5em;
+    background-color: #f0f0f0;
+}
+
+/* 容器的样式：白色背景、圆角、阴影、内边距 */
+.login-container {
+    background-color: #c4f5f8;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+}
+
+/* 表单区：纵向排列，居中对齐 */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 输入框样式 */
+.login-input {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* 提交按钮 */
+.login-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}

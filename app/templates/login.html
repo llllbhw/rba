@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+
+    <link rel="stylesheet" href="/static/css/login.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wasm-seal@latest/dist/seal.min.js"></script>
+
+    <script src="/static/js/login.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>登录</h2>
+
+        <form id="loginForm" action="/" method="POST" onsubmit="attachBrowserAndIpInfo(event)" class="login-form">
+            <input type="text" id="username" name="username" placeholder="用户名" class="login-input" required>
+            <input type="password" id="password" name="password" placeholder="密码" class="login-input" required>
+
+            <button type="submit" class="login-button">登录</button>
+        </form>
+    </div>
+</body>
+</html>

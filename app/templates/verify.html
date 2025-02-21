@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>身份验证</title>
+    <!-- 引入CSS样式表 -->
+    <link rel="stylesheet" href="/static/css/verify.css">
+    <!-- 引入JavaScript脚本 -->
+    <script src="/static/js/verify.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>验证您的身份</h1>
+            <p>请输入发送至您设备上的验证码。</p>
+        </div>
+
+        <div class="form-section">
+            <form id="verifyForm">
+                <label for="verification-code">验证码</label>
+                <input type="text" id="verification-code" name="verification-code" required>
+                <button type="submit" id="submitBtn">验证</button>
+            </form>
+            <!-- 错误提示信息 -->
+            <p class="error-message" id="error-message" style="display:none;">
+                验证码错误，请重新输入。
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>如果您没有收到验证码，<a href="#">点击重新发送</a></p>
+        </div>
+    </div>
+</body>
+</html>

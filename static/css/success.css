@@ -1,0 +1,63 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 成功消息容器 */
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* 成功消息框 */
+.success-box {
+    background-color: white;
+    padding: 40px 60px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 成功标题 */
+.success-box h1 {
+    font-size: 50px;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+/* 成功描述 */
+.success-box p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* 按钮样式 */
+.btn {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}

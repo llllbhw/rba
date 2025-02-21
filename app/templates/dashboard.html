@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <script src="/static/js/dashboard.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Dashboard</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="user-info">
+                <img src="https://via.placeholder.com/50" alt="User Avatar" class="user-avatar">
+                <span class="username">John Doe</span>
+            </div>
+        </header>
+
+        <section class="statistics">
+            <div class="stat-box">
+                <h3>Total Users</h3>
+                <p id="total-users">1,500</p>
+            </div>
+            <div class="stat-box">
+                <h3>Active Sessions</h3>
+                <p id="active-sessions">350</p>
+            </div>
+            <div class="stat-box">
+                <h3>Pending Requests</h3>
+                <p id="pending-requests">12</p>
+            </div>
+            <div class="stat-box">
+                <h3>Errors</h3>
+                <p id="errors">2</p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button class="btn" id="refresh-btn">Refresh Data</button>
+            <button class="btn" id="settings-btn">Settings</button>
+        </section>
+    </div>
+</body>
+</html>
